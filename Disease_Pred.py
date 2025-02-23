@@ -1,8 +1,18 @@
-
-
-import os
-
-os.system("pip install opencv-python-headless streamlit numpy scikit-image pillow")
+import subprocess
+import sys
+packages = [
+        "opencv-python-headless",
+        "streamlit",
+        "numpy",
+        "scikit-image",
+        "pillow"
+    ]
+    
+try:
+    subprocess.check_call([sys.executable, "-m", "pip", "install"] + packages)
+    print("All packages installed successfully!")
+except subprocess.CalledProcessError as e:
+    print(f"Error installing packages: {e}")
 
 
 import streamlit as st
