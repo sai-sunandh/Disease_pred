@@ -1,18 +1,5 @@
-import subprocess
-import sys
-packages = [
-        "opencv-python",
-        "streamlit",
-        "numpy",
-        "scikit-image",
-        "pillow"
-    ]
-    
-try:
-    subprocess.check_call([sys.executable, "-m", "pip", "install"] + packages)
-    print("All packages installed successfully!")
-except subprocess.CalledProcessError as e:
-    print(f"Error installing packages: {e}")
+pip install -r requirements.txt
+
 
 
 import streamlit as st
