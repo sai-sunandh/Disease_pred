@@ -1,7 +1,7 @@
 import subprocess
 import sys
 packages = [
-        "opencv-python-headless",
+        "opencv-python",
         "streamlit",
         "numpy",
         "scikit-image",
