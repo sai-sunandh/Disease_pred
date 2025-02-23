@@ -1,3 +1,8 @@
+pip install moviepy fer opencv-python
+pip install scikit-image
+ 
+
+
 import streamlit as st
 import cv2
 import numpy as np
