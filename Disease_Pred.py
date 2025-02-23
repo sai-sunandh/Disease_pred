@@ -14,6 +14,7 @@ try:
 except subprocess.CalledProcessError as e:
     print(f"Error installing packages: {e}")
 
+pip install opencv-python
 
 import streamlit as st
 import cv2
